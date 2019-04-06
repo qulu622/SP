@@ -1,0 +1,37 @@
+開發平台: 
+win7
+
+開發環境: 
+dev c++
+
+使用的程式語言: 
+c++
+
+所選擇的組合語言: 
+x86
+
+程式設計(功能,流程,使用的data structure):
+功能--
+將x86的程式碼切token後,將結果輸出至螢幕及檔案
+
+流程--
+1.先把table1~table4讀入並建好,然後把table5~table7先設為空字串
+2.請使用者輸入input和output的檔名
+3.開始讀檔案,一次讀一行,全部讀好後,開始切token,然後一行source,一行output結果印出
+
+data structure--
+基本上只用到了很多很多的陣列,來存放資料
+例如:
+string t1[100]; -> 用來存table的資料
+int tmp[100]; -> 用來存放(x,y)的x和y
+char ary[len]; -> 把string to char array
+
+
+未完成的功能:
+應該都已完成
+
+* 切完token後,把integer和string之外的都轉成大寫
+* 註解會直接讀掉, 但仍會印出source, 只是不會有output結果印出
+* 跟SIC差不多, 差異比較大的是x86的table有編號,要把它讀掉,
+  還有x86的數字,是16進位的,會出現ABCDEF,然後結尾會是H,
+  判斷的地方稍做了修改
